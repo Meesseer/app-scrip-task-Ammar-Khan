@@ -1,0 +1,18 @@
+.topMargin{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 80%;
+}
+
+.image-row img{
+    max-width: 100%;
+    padding: 1em;
+}

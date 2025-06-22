@@ -1,0 +1,112 @@
+.tool-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+  
+.tool-border {
+  border: none;
+  height: 2px;
+  background-color: rgba(229, 229, 229, 1);
+  margin: 0 auto;
+  width: 80%;
+}
+  
+.tool-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em auto;
+  width: 80%;
+}
+  
+.tool-content h6 {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: rgba(88, 87, 94, 1);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.suggestion-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: 0; 
+  background-color: white;
+  border: 0.2em solid #ccc;
+  z-index: 999;
+  min-width: 5em;
+  box-shadow: 0 0.2em 0.8em rgba(0, 0, 0, 0.15);
+  padding: 0.5em 0;
+  border-radius: 4px;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 0.6em 1em;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f5f5f5;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .tool-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .tool-border {
+    width: 90%;
+  }
+}
